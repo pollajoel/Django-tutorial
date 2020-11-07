@@ -1,5 +1,5 @@
 DJANGO DETAILLES
-
+Lien utiles : https://www.linkedin.com/learning/decouvrir-django/creer-un-gabarit-pour-afficher-des-donnees-du-modele?u=56745737
 1- Creation d'un projet
 	django-admin startproject Nom-du-projet
 2- 
