@@ -5,6 +5,7 @@ DJANGO DETAILLES
 2- 
 	Lancer le serveur
 	manage.py runserver 127.0.0.1:Numero_port
+	Créer une application ==> manage.py startapp nom_de_lapplication
 3- 
 	Parametrer la base de données
 	- modifier le fichier voir fichier settings
@@ -32,4 +33,15 @@ Effectuer une migration de la base de données
 	- manage.py migrate ==> pour envoyer les migrations vers la base de données
 	- manage.py inspectdb ==> transformer les tables de la base de donnée en Model python
 
+5- Declarer son application dans le fichier settings => [installed_Apps] voir exemple pour ce projet
+6- 
+	Créer un repertoire templates pour les vues dans le repertoire de l'application
+	-template
+	-template [fr] => pour le multilingue
+	- template[fr][public ou private] == en fonction du niveau d'accessibilité
+			- mettre toute les vues dans ce repertoire
 	
+	
+	
+
+
