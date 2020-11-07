@@ -1,0 +1,35 @@
+DJANGO DETAILLES
+
+1- Creation d'un projet
+	django-admin startproject Nom-du-projet
+2- 
+	Lancer le serveur
+	manage.py runserver 127.0.0.1:Numero_port
+3- 
+	Parametrer la base de données
+	- modifier le fichier voir fichier settings
+	# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',==> idiquer le type de base de données
+        'NAME': 'pacha',
+        'USER':'root',
+        'PASSWORD':'',
+    }
+}
+
+4- corriger l'erreur mysql
+	1- ajouter La ligne ci-dessous dans le fichier __init.py__
+	import pymysql
+	pymysql.install_as_MySQLdb()
+	2- se positionner dans le repertoire du projet et taper les commandes suivantes;
+	
+	- pip install --upgrade setuptools
+	- pip install pymysql
+Effectuer une migration de la base de données
+	- manage.py migrate ==> pour envoyer les migrations vers la base de données
+	- manage.py inspectdb ==> transformer les tables de la base de donnée en Model python
+
+	
